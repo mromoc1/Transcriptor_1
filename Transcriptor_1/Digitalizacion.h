@@ -13,7 +13,6 @@ namespace dig {
 	void Inic_Digitalizacion(int dispositivo);
 	void DispositivosDisponibles();
 	void InfoPista();
-
 }
 
 

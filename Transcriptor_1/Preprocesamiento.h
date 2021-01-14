@@ -5,10 +5,11 @@
 #include <iostream>
 
 namespace prep {
-	void setmuestreo();
-	void Aplicar_fft();//recibe vector
-	void Aplicar_MFCC();
-	void Aplicar_Mel();
+	void setMuestreo();
+	void Aplicar_fft(); //Calcular transformada de fourier
+	void Aplicar_MFCC(); //Calcular coficientes ceptrales de mel
+	void Aplicar_MFS();  //Mel frecuency Spectrum
+	void Aplicar_Mel(std::vector<float>& melSpec);
 	//retornar el vector para mostrarlo en pantalla
 	//<float> getvectormuestreo();
 }

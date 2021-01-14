@@ -10,15 +10,13 @@
 
 // TODO: Ejemplo de una función de biblioteca
 namespace trs {
-
+    
     void Transcripcion()
     {
         dig::Inic_Digitalizacion();
 
         sf::InputSoundFile file;
         if (!file.openFromFile("my_record.wav"));
-
-
         sf::Int16 samples[1024];
         sf::Uint64 count;
         do
@@ -29,8 +27,6 @@ namespace trs {
             // you want to do with the samples...
         } while (count > 0);
 
-
- 
         float samples2[1024];
         for (int i = 0; i < 1024; i++)
         {

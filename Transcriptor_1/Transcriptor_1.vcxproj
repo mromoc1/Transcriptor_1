@@ -154,14 +154,12 @@
   <ItemGroup>
     <ClCompile Include="CoreFrequencyDomainFeatures.cpp" />
     <ClCompile Include="CoreTimeDomainFeatures.cpp" />
-    <ClCompile Include="DigiPre.cpp" />
     <ClCompile Include="Digitalizacion.cpp" />
     <ClCompile Include="Gist.cpp" />
     <ClCompile Include="MFCC.cpp" />
     <ClCompile Include="OnsetDetectionFunction.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Preprocesamiento.cpp" />
-    <ClCompile Include="Transcriptor.cpp" />
     <ClCompile Include="TranscriptorLib.cpp" />
     <ClCompile Include="WindowFunctions.cpp" />
     <ClCompile Include="Yin.cpp" />
@@ -169,13 +167,11 @@
   <ItemGroup>
     <ClInclude Include="CoreFrequencyDomainFeatures.h" />
     <ClInclude Include="CoreTimeDomainFeatures.h" />
-    <ClInclude Include="DigiPre.h" />
     <ClInclude Include="Digitalizacion.h" />
     <ClInclude Include="Gist.h" />
     <ClInclude Include="MFCC.h" />
     <ClInclude Include="OnsetDetectionFunction.h" />
     <ClInclude Include="Preprocesamiento.h" />
-    <ClInclude Include="Transcriptor.h" />
     <ClInclude Include="TranscriptorLib.h" />
     <ClInclude Include="WindowFunctions.h" />
     <ClInclude Include="Yin.h" />
