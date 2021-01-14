@@ -43,11 +43,6 @@ namespace prep {
             //std::cout << "Muestreo: " << samples[i] << std::endl;
             samples2[i] = samples[i];
         }
-        int frameSize = 1024;
-        int sampleRate = file.getSampleRate();
-        Gist<float> gist(frameSize, sampleRate);
-        gist.processAudioFrame(samples2, 1024);
-        
 	}
 
     void setPocessAudioFrame() {
