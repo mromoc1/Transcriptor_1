@@ -4,7 +4,7 @@
 #include <iostream>
 #include <Windows.h>
 #include "Gist.h"
-#include "DigiPre.h"
+#include "Digitalizacion.h"
 
 
 
@@ -13,7 +13,7 @@ namespace trs {
 
     void Transcripcion()
     {
-        dgp::Inic_Digitalizacion();
+        dig::Inic_Digitalizacion();
 
         sf::InputSoundFile file;
         if (!file.openFromFile("my_record.wav"));
