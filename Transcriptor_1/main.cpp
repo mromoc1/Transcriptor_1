@@ -13,7 +13,7 @@ int main()
     dig::Inic_Digitalizacion();
     //dig::DispositivosDisponibles();
     dig::InfoPista();
-    //prep::setmuestreo();
+    prep::setmuestreo();
 
     //digitalizar iniciar y detener una grabacion generando la muectra correspondiiente al archivo grabado
     //mostrar el vector del audio del archivo grabado

@@ -12,6 +12,9 @@ namespace prep {
             std::cout << "No se encuentra el archivo dentro de la carpeta local" << std::endl;
         }
         const int s = file.getSampleCount();
+
+        std::cout << s << std::endl;
+
         sf::Int16 samples[1024];
 
         sf::Uint64 count;
