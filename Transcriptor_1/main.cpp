@@ -8,9 +8,8 @@ int main()
     //Aqui necesitamos agregar y probar todas las funcionalidades que tendría la libreria de transcripcion.
 
     //seteamos los 10 segundos
-
-    settiempo(10);
-    iniciardigitalizacion();
+    dig::Inic_Digitalizacion();
+    dig::InfoPista();
 
     //digitalizar iniciar y detener una grabacion generando la muectra correspondiiente al archivo grabado
     //mostrar el vector del audio del archivo grabado
