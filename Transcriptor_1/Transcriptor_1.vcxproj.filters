@@ -54,12 +54,6 @@
     <ClCompile Include="Gist.cpp">
       <Filter>Archivos de origen\Librerias</Filter>
     </ClCompile>
-    <ClCompile Include="DigiPre.cpp">
-      <Filter>Archivos de origen\Digitalizacion</Filter>
-    </ClCompile>
-    <ClCompile Include="TranscriptorLib.cpp">
-      <Filter>Archivos de origen\Digitalizacion</Filter>
-    </ClCompile>
     <ClCompile Include="MFCC.cpp">
       <Filter>Archivos de origen\Librerias</Filter>
     </ClCompile>
@@ -75,23 +69,17 @@
     <ClCompile Include="main.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>
-    <ClCompile Include="Transcriptor.cpp">
-      <Filter>Archivos de origen\Transcriptor</Filter>
-    </ClCompile>
     <ClCompile Include="Digitalizacion.cpp">
       <Filter>Archivos de origen\Digitalizacion</Filter>
     </ClCompile>
     <ClCompile Include="Preprocesamiento.cpp">
       <Filter>Archivos de origen\Preprocesamiento</Filter>
     </ClCompile>
+    <ClCompile Include="TranscriptorLib.cpp">
+      <Filter>Archivos de origen\Transcriptor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DigiPre.h">
-      <Filter>Archivos de encabezado\Digitalizacion</Filter>
-    </ClInclude>
-    <ClInclude Include="TranscriptorLib.h">
-      <Filter>Archivos de encabezado\Digitalizacion</Filter>
-    </ClInclude>
     <ClInclude Include="Yin.h">
       <Filter>Archivos de encabezado\Librerias</Filter>
     </ClInclude>
@@ -113,14 +101,14 @@
     <ClInclude Include="CoreFrequencyDomainFeatures.h">
       <Filter>Archivos de encabezado\Librerias</Filter>
     </ClInclude>
-    <ClInclude Include="Transcriptor.h">
-      <Filter>Archivos de encabezado\Transcriptor</Filter>
-    </ClInclude>
     <ClInclude Include="Digitalizacion.h">
       <Filter>Archivos de encabezado\Digitalizacion</Filter>
     </ClInclude>
     <ClInclude Include="Preprocesamiento.h">
       <Filter>Archivos de encabezado\Preprocesamiento</Filter>
+    </ClInclude>
+    <ClInclude Include="TranscriptorLib.h">
+      <Filter>Archivos de encabezado\Transcriptor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

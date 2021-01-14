@@ -20,13 +20,10 @@ namespace dig {
             std::cout << "No se Reconoce el dispositivo" << std::endl;
 
         }
-        std::cout << "A continuacion empezara la grabacion, su grabacion no debe durar mas de 10 seg, \npuede parar cuando quiera dentro de lapso" << std::endl;
+        std::cout << "A continuacion empezara la grabacion, su grabacion no debe durar mas de 10 seg, \npuede parar cuando quiera dentro de lapso pulsando F8" << std::endl;
         system("pause");
 
-
-        // start the capture
         recorder.start();
-        std::cout << "Pulsa F8 para Deterner Grabacion" << std::endl;
         std::cout << "grabando..." << std::endl;
         for (int i = 0; i < 10+1; i++) {
             while (reloj.getElapsedTime().asMilliseconds() < 1000 && !GetAsyncKeyState(VK_F8)) {}
@@ -35,11 +32,7 @@ namespace dig {
         system("cls");
         recorder.stop();
         const sf::SoundBuffer& buffer = recorder.getBuffer();
-
         buffer.saveToFile("my_record.wav");
-
-        
-
     }
 
     void Inic_Digitalizacion(int dispositivo)
@@ -49,15 +42,11 @@ namespace dig {
         std::string inputDevice = availableDevices[dispositivo];
 
         sf::SoundBufferRecorder recorder;
-        if (!recorder.setDevice(inputDevice))
-        {
+        if (!recorder.setDevice(inputDevice)){
             std::cout << "No se Reconoce el dispositivo" << std::endl;
-
         }
-        std::cout << "A continuacion empezara la grabacion, su grabacion no debe durar mas de 10 seg, \npuede parar cuando quiera dentro de lapso" << std::endl;
+        std::cout << "A continuacion empezara la grabacion, su grabacion no debe durar mas de 10 seg, \npuede parar cuando quiera dentro de lapso pulsando F8" << std::endl;
         system("pause");
-
-
         // start the capture
         recorder.start();
         std::cout << "Pulsa F8 para Deterner Grabacion" << std::endl;
@@ -69,9 +58,7 @@ namespace dig {
         }
         recorder.stop();
         const sf::SoundBuffer& buffer = recorder.getBuffer();
-
         buffer.saveToFile("my_record.wav");
-
     }
 
     void DispositivosDisponibles()//Muestra todos los dispositivos que existen en el sistema
@@ -99,7 +86,7 @@ namespace dig {
             std::cout << "channels: " << file.getChannelCount() << std::endl;// 1 = mono <> 2 = stereo
             std::cout << "sample rate: " << file.getSampleRate() << std::endl; //Muestreo por Segundo
             std::cout << "sample count: " << file.getSampleCount() << std::endl;//Cantidad de Muestro en el archivo
-            
+      
         }
     }
 
