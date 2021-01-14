@@ -1,6 +1,5 @@
 #include "Digitalizacion.h"
 
-
 #include<SFML/Audio.hpp>
 #include <iostream>
 #include <Windows.h>
@@ -28,16 +27,19 @@ namespace dig {
         // start the capture
         recorder.start();
         std::cout << "Pulsa F8 para Deterner Grabacion" << std::endl;
-
-        for (int i = 0; i < 10; i++) {
-            std::cout << i << std::endl;
+        std::cout << "grabando..." << std::endl;
+        for (int i = 0; i < 10+1; i++) {
             while (reloj.getElapsedTime().asMilliseconds() < 1000 && !GetAsyncKeyState(VK_F8)) {}
             reloj.restart();
         }
+        system("cls");
         recorder.stop();
         const sf::SoundBuffer& buffer = recorder.getBuffer();
 
         buffer.saveToFile("my_record.wav");
+
+        
+
     }
 
     void Inic_Digitalizacion(int dispositivo)
@@ -97,9 +99,8 @@ namespace dig {
             std::cout << "channels: " << file.getChannelCount() << std::endl;// 1 = mono <> 2 = stereo
             std::cout << "sample rate: " << file.getSampleRate() << std::endl; //Muestreo por Segundo
             std::cout << "sample count: " << file.getSampleCount() << std::endl;//Cantidad de Muestro en el archivo
+            
         }
-
-
     }
 
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include "Digitalizacion.h";
+#include "Preprocesamiento.h"
 using namespace std;
 
 int main()
@@ -8,8 +9,11 @@ int main()
     //Aqui necesitamos agregar y probar todas las funcionalidades que tendría la libreria de transcripcion.
 
     //seteamos los 10 segundos
+
     dig::Inic_Digitalizacion();
+    //dig::DispositivosDisponibles();
     dig::InfoPista();
+    //prep::setmuestreo();
 
     //digitalizar iniciar y detener una grabacion generando la muectra correspondiiente al archivo grabado
     //mostrar el vector del audio del archivo grabado
