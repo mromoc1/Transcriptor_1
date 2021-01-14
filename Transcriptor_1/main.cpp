@@ -13,8 +13,8 @@ int main()
 
     //Aqui necesitamos agregar y probar todas las funcionalidades que tendría la libreria de transcripcion.
 
-    dig::Inic_Digitalizacion();
-    dig::DispositivosDisponibles();
+    //dig::Inic_Digitalizacion();
+    //dig::DispositivosDisponibles();
     dig::InfoPista();
     prep::setMuestreo();
 

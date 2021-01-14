@@ -55,6 +55,7 @@ namespace trs {
         // MFCCs
         const std::vector<float>& mfcc = gist.getMelFrequencyCepstralCoefficients();
 
+
         for (int i = 0; i < mfcc.size(); i++)
         {
             std::cout << "Frecuencia de MEl con coeficientes Cepstral: " << mfcc[i] << std::endl;
