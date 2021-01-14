@@ -13,66 +13,114 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\Digitalizacion">
+      <UniqueIdentifier>{a79404fc-eb8e-4de3-90f9-d8cb6cf39f75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Preprocesamiento">
+      <UniqueIdentifier>{22debce9-e641-41b2-b6d3-23eb0056ea6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Redes Neuronales">
+      <UniqueIdentifier>{fb5f12bc-75e5-4603-9972-90c77a68769a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Librerias">
+      <UniqueIdentifier>{599cd06c-f9f0-4f6e-9c19-24dbcf363310}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Transcriptor">
+      <UniqueIdentifier>{d3576392-7feb-49bd-877f-14d9f6a1a58e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Librerias">
+      <UniqueIdentifier>{87438d16-b79c-4a3e-87e8-287ae61b79e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Digitalizacion">
+      <UniqueIdentifier>{1d0f5bc5-6d47-4330-9c58-0063951861cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Preprocesamiento">
+      <UniqueIdentifier>{1cdb68d4-3051-4bc7-ba96-2776daa2876b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Redes Neuronales">
+      <UniqueIdentifier>{838985a5-05f4-4591-aa63-e737b840382a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Transcriptor">
+      <UniqueIdentifier>{2b45215e-d251-4c80-b35d-4887f4bf0597}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
-      <Filter>Archivos de recursos</Filter>
-    </ClCompile>
     <ClCompile Include="CoreFrequencyDomainFeatures.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Librerias</Filter>
     </ClCompile>
     <ClCompile Include="CoreTimeDomainFeatures.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="DigiPre.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Librerias</Filter>
     </ClCompile>
     <ClCompile Include="Gist.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Librerias</Filter>
     </ClCompile>
-    <ClCompile Include="MFCC.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="OnsetDetectionFunction.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="DigiPre.cpp">
+      <Filter>Archivos de origen\Digitalizacion</Filter>
     </ClCompile>
     <ClCompile Include="TranscriptorLib.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Digitalizacion</Filter>
     </ClCompile>
-    <ClCompile Include="WindowFunctions.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="MFCC.cpp">
+      <Filter>Archivos de origen\Librerias</Filter>
+    </ClCompile>
+    <ClCompile Include="OnsetDetectionFunction.cpp">
+      <Filter>Archivos de origen\Librerias</Filter>
     </ClCompile>
     <ClCompile Include="Yin.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Librerias</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowFunctions.cpp">
+      <Filter>Archivos de origen\Librerias</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcriptor.cpp">
+      <Filter>Archivos de origen\Transcriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="Digitalizacion.cpp">
+      <Filter>Archivos de origen\Digitalizacion</Filter>
+    </ClCompile>
+    <ClCompile Include="Preprocesamiento.cpp">
+      <Filter>Archivos de origen\Preprocesamiento</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CoreFrequencyDomainFeatures.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="CoreTimeDomainFeatures.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="DigiPre.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Gist.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="MFCC.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="OnsetDetectionFunction.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Digitalizacion</Filter>
     </ClInclude>
     <ClInclude Include="TranscriptorLib.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="WindowFunctions.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Digitalizacion</Filter>
     </ClInclude>
     <ClInclude Include="Yin.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowFunctions.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="OnsetDetectionFunction.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCC.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="Gist.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreTimeDomainFeatures.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreFrequencyDomainFeatures.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcriptor.h">
+      <Filter>Archivos de encabezado\Transcriptor</Filter>
+    </ClInclude>
+    <ClInclude Include="Digitalizacion.h">
+      <Filter>Archivos de encabezado\Digitalizacion</Filter>
+    </ClInclude>
+    <ClInclude Include="Preprocesamiento.h">
+      <Filter>Archivos de encabezado\Preprocesamiento</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

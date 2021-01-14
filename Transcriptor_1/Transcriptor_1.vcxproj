@@ -24,6 +24,7 @@
     <ProjectGuid>{b091af20-d692-41ce-81dc-81d42f3fdb4a}</ProjectGuid>
     <RootNamespace>Transcriptor1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Transcriptor_teste</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -148,10 +149,13 @@
     <ClCompile Include="CoreFrequencyDomainFeatures.cpp" />
     <ClCompile Include="CoreTimeDomainFeatures.cpp" />
     <ClCompile Include="DigiPre.cpp" />
+    <ClCompile Include="Digitalizacion.cpp" />
     <ClCompile Include="Gist.cpp" />
     <ClCompile Include="MFCC.cpp" />
     <ClCompile Include="OnsetDetectionFunction.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Preprocesamiento.cpp" />
+    <ClCompile Include="Transcriptor.cpp" />
     <ClCompile Include="TranscriptorLib.cpp" />
     <ClCompile Include="WindowFunctions.cpp" />
     <ClCompile Include="Yin.cpp" />
@@ -160,9 +164,12 @@
     <ClInclude Include="CoreFrequencyDomainFeatures.h" />
     <ClInclude Include="CoreTimeDomainFeatures.h" />
     <ClInclude Include="DigiPre.h" />
+    <ClInclude Include="Digitalizacion.h" />
     <ClInclude Include="Gist.h" />
     <ClInclude Include="MFCC.h" />
     <ClInclude Include="OnsetDetectionFunction.h" />
+    <ClInclude Include="Preprocesamiento.h" />
+    <ClInclude Include="Transcriptor.h" />
     <ClInclude Include="TranscriptorLib.h" />
     <ClInclude Include="WindowFunctions.h" />
     <ClInclude Include="Yin.h" />
