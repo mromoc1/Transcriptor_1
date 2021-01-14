@@ -46,14 +46,12 @@ namespace prep {
 
         }*/
 
-        /*
-
 
         int frameSize = 1024;
         int sampleRate = file.getSampleRate();
         std::cout << sampleRate<< std::endl;
         Gist<float> gist(frameSize, sampleRate);
-        gist.processAudioFrame(samples2, 1024);*/
+        gist.processAudioFrame(samples2, 1024);
 	}
 }
 
