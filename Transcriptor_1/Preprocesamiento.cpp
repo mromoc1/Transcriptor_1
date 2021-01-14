@@ -11,26 +11,41 @@ namespace prep {
         {
             std::cout << "No se encuentra el archivo dentro de la carpeta local" << std::endl;
         }
-        const int s = file.getSampleCount();
 
-        std::cout << s << std::endl;
-
+        std::vector<sf::Int16> samples1;
         sf::Int16 samples[1024];
-
         sf::Uint64 count;
+        float samples2[1024];
+        int i = 0;
+        int k = 0;
         do
         {
             count = file.read(samples, 1024);
+            //std::cout << i  << std::endl;
+            //std::cout << count << std::endl;
+            
+            for (int i = 0; i < 1024; i++) //los 1024 son muestras que se sacarían del audio total
+            {
+                std::cout << "Muestreo: " << samples[i] << std::endl;
+                samples2[i] = samples[i];
+                k++;
+            }
+            
             // process, analyze, play, convert, or whatever
             // you want to do with the samples...
         } while (count > 0);
-
-        float samples2[1024];
-        for (int i = 0; i < 1024; i++)
+        std::cout << "KKKK" << k << std::endl;
+        /*
+        std::cout << "AAAAAAAAAAAAAAAAAAAAAAAA "<<std::endl;
+        
+        for (int i = 0; i < 320; i++)
         {
             std::cout << "Muestreo: " << samples[i] << std::endl;
             samples2[i] = samples[i];
-        }
+
+        }*/
+
+
         int frameSize = 1024;
         int sampleRate = file.getSampleRate();
         std::cout << sampleRate<< std::endl;

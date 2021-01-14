@@ -10,7 +10,7 @@ int main()
 
     //seteamos los 10 segundos
 
-    dig::Inic_Digitalizacion();
+    //dig::Inic_Digitalizacion();
     //dig::DispositivosDisponibles();
     dig::InfoPista();
     prep::setmuestreo();
