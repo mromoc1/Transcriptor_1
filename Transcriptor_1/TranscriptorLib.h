@@ -5,8 +5,7 @@
 #include<SFML/Audio.hpp>
 #include <iostream>
 #include <Windows.h>
-#include "Gist.h"
-#include "DigiPre.h"
+#include "Digitalizacion.h"
 
 namespace trs {
 
