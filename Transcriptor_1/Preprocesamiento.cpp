@@ -6,6 +6,6 @@ void muestrear() {
 	if (!file.openFromFile("my_record.wav")) {
 		std::cout << "la grabacion que intenta abrir no existe" << std::endl;
 	} 
-	file.
+	
 }
 
