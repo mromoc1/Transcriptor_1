@@ -29,9 +29,6 @@ namespace prep {
                 std::cout << "Muestreo: " << samples[i] << std::endl;
                 samples2[i] = samples[i];
                 k++;
-
-
-
             }
             
             // process, analyze, play, convert, or whatever
