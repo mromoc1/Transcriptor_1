@@ -19,15 +19,23 @@ namespace prep {
         muestreoaudio.begin();
         do
         {
+            /*indica cada cuanto se realiza el muestreo, es decir cada 1024 muestras 
+            la guarda en el vector "samples"*/
+            
             count = file.read(samples, 1024);
-            for (int i = 0; i < 1024; i++) {
-                if (samples[i] != 0) {
+            /*dado que el vector samples guarda estos 1024, debemos recorrerlo y 
+            almacenarlos en una estructura de vector flotante que contendra todo 
+            el contenido de audio*/
+            if (count > 0) {
+                for (int i = 0; i < count; i++) {
                     muestreoaudio.push_back(samples[i]);
                 }
-            }
+            } 
         } while (count > 0);
 
-        //EL SIGUIENTE SEGMENTO COMENTADO PERMITE VISUALIZAR EL VECTOR DE MUESTRA OBTENIDO DEL ARCHIVO DE AUDIO
+        /*EL SIGUIENTE SEGMENTO COMENTADO PERMITE VISUALIZAR 
+        EL VECTOR DE MUESTRA OBTENIDO DEL ARCHIVO DE AUDIO*/
+        std::cout << muestreoaudio.size() << std::endl;
         /*
         for (int i = 0; i < muestreoaudio.size(); i++) {
             std::cout << muestreoaudio[i] << ",";

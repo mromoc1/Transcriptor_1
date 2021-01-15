@@ -10,7 +10,7 @@ int main()
 {
     //trs::Transcripcion();
 
-    dig::Inic_Digitalizacion(); //Inicializa el modulo de digitalizacion 
+    //dig::Inic_Digitalizacion(); //Inicializa el modulo de digitalizacion 
     dig::InfoPista(); //Entrega informacion de la pista
     prep::setMuestreo(); // realiza el muestreo del archivo de audio y aplica las funciones de MFCC, Mel y FFT
 
