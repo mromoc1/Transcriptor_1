@@ -10,11 +10,9 @@
 
 namespace dig {
 	void Inic_Digitalizacion();
-	void Inic_Digitalizacion(int dispositivo);
 	void DispositivosDisponibles();
 	void InfoPista();
 }
-
 
 
 #endif //DIGITALIZACION_H

@@ -13,10 +13,9 @@ int main()
 
     //Aqui necesitamos agregar y probar todas las funcionalidades que tendría la libreria de transcripcion.
 
+    dig::InfoPista();
+    //trs::Transcripcion();
 
-    trs::Transcripcion();
-
- 
     
 
     //digitalizar iniciar y detener una grabacion generando la muectra correspondiiente al archivo grabado
