@@ -3,6 +3,7 @@
 #define PREPROCESAMIENTO_H
 
 #include <iostream>
+#include "Gist.h"
 
 namespace prep {
 	void setMuestreo();

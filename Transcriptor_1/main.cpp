@@ -11,12 +11,13 @@ int main()
     
     //trs::Transcripcion();
 
-    //Aqui necesitamos agregar y probar todas las funcionalidades que tendría la libreria de transcripcion.
+    //Aqui necesitamos agregar y probar todas las funcionalidades que tendr?a la libreria de transcripcion.
 
-    //dig::Inic_Digitalizacion();
-    //dig::DispositivosDisponibles();
-    dig::InfoPista();
-    prep::setMuestreo();
+
+    trs::Transcripcion();
+
+ 
+    
 
     //digitalizar iniciar y detener una grabacion generando la muectra correspondiiente al archivo grabado
     //mostrar el vector del audio del archivo grabado

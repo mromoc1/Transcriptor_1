@@ -22,7 +22,7 @@ namespace prep {
 
             //std::cout << i  << std::endl;
             //std::cout << count << std::endl;
-           /* for (int i = 0; i < 1024; i++) //los 1024 son muestras que se sacarían del audio total
+           /* for (int i = 0; i < 1024; i++) //los 1024 son muestras que se sacar?an del audio total
             {
                 //std::cout << "Muestreo: " << samples[i] << std::endl;
                 samples2[i] = samples[i];
