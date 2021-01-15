@@ -11,8 +11,5 @@ namespace prep {
 	void Aplicar_MFCC(Gist<float> gist); //Coficientes ceptrales de mel
 	void Aplicar_MFS(Gist<float> gist);  //Mel frecuency Spectrum
 }
-
-
-
 #endif //PREPROCESAMIENTO_H
 
