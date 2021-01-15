@@ -8,25 +8,21 @@ using namespace std;
 
 int main()
 {
-    
     //trs::Transcripcion();
 
-    //Aqui necesitamos agregar y probar todas las funcionalidades que tendr?a la libreria de transcripcion.
+    dig::Inic_Digitalizacion(); //Inicializa el modulo de digitalizacion 
+    dig::InfoPista(); //Entrega informacion de la pista
+    prep::setMuestreo(); // realiza el muestreo del archivo de audio y aplica las funciones de MFCC, Mel y FFT
 
 
-    trs::Transcripcion();
+    //La entrega comprende
+    //Digitalizacion de voz a archivo formato wav
+    //Que la grabacion se pueda detener antes de los 10 segundos
+    //Que la grabacion se detenga luego de 10 segundos
+    //Mostrar el muestreo de un fragmento de audio a modo de test
+    //Mostrar el muestreo luego de los distinto procesamientos
 
- 
-    
-
-    //digitalizar iniciar y detener una grabacion generando la muectra correspondiiente al archivo grabado
-    //mostrar el vector del audio del archivo grabado
-    //obtener como entrada un archivo MP3 y guardar su vector de audio desde un directorio
-    //setear la carpeta de entrenamiento
-    //mostrar el vector del audio MP3
-
-    //obtener el vector y pasar por los distintos opciones de la libreria de preprocesos
-
-
+    //Un plus es mostrar los dispositivos de tipo microfono
+    //Un plus es iniciar la digitalizacion con 
 
 }
