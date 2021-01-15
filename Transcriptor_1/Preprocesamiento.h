@@ -7,14 +7,9 @@
 
 namespace prep {
 	void setMuestreo();
-	void setProcessAudioFrame(float vector[]);
-	void Aplicar_fft(); //Calcular transformada de fourier
-	void Aplicar_MFCC(); //Calcular coficientes ceptrales de mel
-	void Aplicar_MFS();  //Mel frecuency Spectrum
-	void Aplicar_Mel();
-
-	//retornar el vector para mostrarlo en pantalla
-	//<float> getvectormuestreo();
+	void Aplicar_FFT(Gist<float> gist); //Transformada
+	void Aplicar_MFCC(Gist<float> gist); //Coficientes ceptrales de mel
+	void Aplicar_MFS(Gist<float> gist);  //Mel frecuency Spectrum
 }
 
 
