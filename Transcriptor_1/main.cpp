@@ -11,7 +11,7 @@ int main()
     
     //trs::Transcripcion();
 
-    //Aqui necesitamos agregar y probar todas las funcionalidades que tendría la libreria de transcripcion.
+    //Aqui necesitamos agregar y probar todas las funcionalidades que tendr?a la libreria de transcripcion.
 
     dig::InfoPista();
     //trs::Transcripcion();

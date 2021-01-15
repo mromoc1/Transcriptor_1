@@ -22,7 +22,7 @@ namespace prep {
 
             //std::cout << i  << std::endl;
             //std::cout << count << std::endl;
-           /* for (int i = 0; i < 1024; i++) //los 1024 son muestras que se sacarían del audio total
+           /* for (int i = 0; i < 1024; i++) //los 1024 son muestras que se sacar?an del audio total
             {
                 //std::cout << "Muestreo: " << samples[i] << std::endl;
                 samples2[i] = samples[i];
@@ -43,11 +43,38 @@ namespace prep {
             //std::cout << "Muestreo: " << samples[i] << std::endl;
             samples2[i] = samples[i];
         }
+        int frameSize = 320;
+        int sampleRate = file.getSampleRate();
+        Gist<float> gist(frameSize, sampleRate);
+        gist.processAudioFrame(samples2, 320);
+        const std::vector<float>& melSpec = gist.getMelFrequencySpectrum();
+
+        // Mel-frequency Spectrum
+        const std::vector<float>& melSpec = gist.getMelFrequencySpectrum();
+
+        for (int i = 0; i < melSpec.size(); i++)
+        {
+            std::cout << "Espectro de Frecuencia de MEL: " << melSpec[i] << std::endl;
+        }
+
+        // MFCCs
+        const std::vector<float>& mfcc = gist.getMelFrequencyCepstralCoefficients();
+
+
+        for (int i = 0; i < mfcc.size(); i++)
+        {
+            std::cout << "Frecuencia de MEl con coeficientes Cepstral: " << mfcc[i] << std::endl;
+        }
+
+
+        // FFT Magnitude Spectrum
+        const std::vector<float>& magSpec = gist.getMagnitudeSpectrum();
+        for (int i = 0; i < mfcc.size(); i++)
+        {
+            std::cout << "Magnitud del Espectro: " << magSpec[i] << std::endl;
+        }
+        
 	}
-
-    void setPocessAudioFrame() {
-
-    }
 
 }
 
