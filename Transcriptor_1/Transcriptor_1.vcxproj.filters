@@ -78,6 +78,15 @@
     <ClCompile Include="TranscriptorLib.cpp">
       <Filter>Archivos de origen\Transcriptor</Filter>
     </ClCompile>
+    <ClCompile Include="Celda.cpp">
+      <Filter>Archivos de origen\Redes Neuronales</Filter>
+    </ClCompile>
+    <ClCompile Include="Activacion.cpp">
+      <Filter>Archivos de origen\Redes Neuronales</Filter>
+    </ClCompile>
+    <ClCompile Include="Entrenamiento.cpp">
+      <Filter>Archivos de origen\Redes Neuronales</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Yin.h">
@@ -109,6 +118,15 @@
     </ClInclude>
     <ClInclude Include="TranscriptorLib.h">
       <Filter>Archivos de encabezado\Transcriptor</Filter>
+    </ClInclude>
+    <ClInclude Include="Celda.h">
+      <Filter>Archivos de encabezado\Redes Neuronales</Filter>
+    </ClInclude>
+    <ClInclude Include="Activacion.h">
+      <Filter>Archivos de encabezado\Redes Neuronales</Filter>
+    </ClInclude>
+    <ClInclude Include="Entrenamiento.h">
+      <Filter>Archivos de encabezado\Redes Neuronales</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
