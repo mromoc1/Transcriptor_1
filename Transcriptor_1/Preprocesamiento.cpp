@@ -36,42 +36,43 @@ namespace prep {
         /*EL SIGUIENTE SEGMENTO COMENTADO PERMITE VISUALIZAR 
         EL VECTOR DE MUESTRA OBTENIDO DEL ARCHIVO DE AUDIO*/
         std::cout << muestreoaudio.size() << std::endl;
+        
         /*
         for (int i = 0; i < muestreoaudio.size(); i++) {
-            std::cout << muestreoaudio[i] << ",";
-        }*/
-
+            std::cout << muestreoaudio[i] << std::endl;
+        }
+        */
         //EL SIGUIENTE SEGMENTO COMENTADO PERMITE UTILIZAR LAS FUNCIONALIDADES DEL PREPROCESAMIENTO
-        /*
+        
         int frameSize = 1024;
         int sampleRate = file.getSampleRate();
         Gist<float> gist(frameSize, sampleRate);
         gist.setAudioFrameSize(muestreoaudio.size());
-        gist.processAudioFrame(muestreoaudio);*/
+        gist.processAudioFrame(muestreoaudio);
 
-        /*
         // FFT Magnitude Spectrum
         std::cout << "Magnitud del Espectro: " << std::endl;
         const std::vector<float>& magSpec = gist.getMagnitudeSpectrum();
+        /*
         for (int i = 0; i < magSpec.size(); i++) {
             std::cout << magSpec[i] << "   ,   ";
-        }*/
-
-        /*
+        }
+        */
+        
         // MFCCs
         const std::vector<float>& mfcc = gist.getMelFrequencyCepstralCoefficients();
         for (int i = 0; i < mfcc.size(); i++) {
             std::cout << "Frecuencia de MEl con coeficientes Cepstral: " << mfcc[i] << std::endl;
         }
-        */
+        
 
-        /*
+        
         // Mel-frequency Spectrum
         const std::vector<float>& melSpec = gist.getMelFrequencySpectrum();
         for (int i = 0; i < melSpec.size(); i++) {
             std::cout << "Espectro de Frecuencia de MEL: " << melSpec[i] << std::endl;
         }
-        */
+        
     }
 
     void Aplicar_MFCC(Gist<float> gist) {

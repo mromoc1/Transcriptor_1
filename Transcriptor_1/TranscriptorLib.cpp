@@ -36,7 +36,7 @@ namespace trs {
         float samples2[1024];
         for (int i = 0; i < 1024; i++)
         {
-            //std::cout << "Muestreo: " << samples[i] << std::endl;
+            std::cout <<  samples[i] << std::endl;
             samples2[i] = samples[i];
         }
 

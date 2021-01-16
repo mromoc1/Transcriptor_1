@@ -58,7 +58,7 @@ namespace dig {
             //Atributos de la pista de audio
             std::cout << "duration: " << file.getDuration().asSeconds() << std::endl;
             std::cout << "channels: " << file.getChannelCount() << std::endl;// 1 = mono <> 2 = stereo
-            std::cout << "sample rate: " << file.getSampleRate() << std::endl; //Frecuencia de muestreo
+            std::cout << "sample rate: " << file.getSampleRate() << std::endl; //Frecuencia de muestreo //Muestreo por segundos --> 44.1Khz
             std::cout << "sample count: " << file.getSampleCount() << std::endl;//Cantidad de Muestro en el archivo
       
         }
