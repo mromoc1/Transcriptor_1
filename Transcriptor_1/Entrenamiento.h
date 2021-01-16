@@ -13,5 +13,6 @@ namespace entr {
 	string getNombreAudio(); //retorna el  nombre del audio
 	void setDireccionEntrenamiento(string dir); //guarda la direccion de la carpeta de entrenamiento
 	string getDireccionEntrenamiento(); //obtiene la direccion de la carpeta de entrenamiento
-}
+	void getArchivoTSV();
+}	
 #endif //ENTRENAMIENTO_H

@@ -1,10 +1,14 @@
 #include "Entrenamiento.h"
 
+#include <iostream>
+#include <string>
+#include <fstream>
 
 
 string palabratranscribir;
 string nombreaudio;
 string direccioncarpetaentrenamiento;
+
 namespace entr {
 	/*guarda la palabra a transcribir*/
 	void setPalabra(string _palabra) {
@@ -35,6 +39,27 @@ namespace entr {
 	string getDireccionEntrenamiento() {
 		return direccioncarpetaentrenamiento;
 	}
-	
 
+	
+	void getArchivoTSV()
+	{
+
+		std::ifstream archivoTSV;
+		archivoTSV.open("C:/Users/matut/OneDrive/Escritorio/es/train.tsv");
+		std::string str;
+		while (std::getline(archivoTSV, str,'\t'))
+		{
+			if (str.find(nombreaudio,0) != string::npos)
+			{
+				std::getline(archivoTSV, str, '\t');
+
+				entr::setPalabra(str);
+			}
+
+		}
+
+
+	archivoTSV.close();
+	}
+	
 }
