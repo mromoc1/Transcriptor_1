@@ -159,10 +159,12 @@
     <ClCompile Include="Entrenamiento.cpp" />
     <ClCompile Include="Gist.cpp" />
     <ClCompile Include="MFCC.cpp" />
+    <ClCompile Include="RedNeuronal.cpp" />
     <ClCompile Include="OnsetDetectionFunction.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Preprocesamiento.cpp" />
     <ClCompile Include="Activacion.cpp" />
+    <ClCompile Include="Neurona.cpp" />
     <ClCompile Include="TranscriptorLib.cpp" />
     <ClCompile Include="WindowFunctions.cpp" />
     <ClCompile Include="Yin.cpp" />
