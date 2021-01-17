@@ -13,7 +13,7 @@ namespace prep {
         {
             std::cout << "No se encuentra el archivo dentro de la carpeta local" << std::endl;
         }
-        sf::Int16 samples[16000];
+        sf::Int16 samples[1024];
         sf::Uint64 count;
         //std::vector<std::vector<float>> vec; //vector que guarda cada segmento de muestra
         std::vector<float> muestreoaudio; //vector que guarda el segemento de audio completo
@@ -24,7 +24,7 @@ namespace prep {
             /*indica cada cuanto se realiza el muestreo, es decir cada 16000 muestras 
             la guarda en el vector "samples"*/
             
-            count = file.read(samples, 16000); //cada 20 milisegundos 
+            count = file.read(samples, 1024); //cada 20 milisegundos 
             /*dado que el vector samples guarda estos 1024, debemos recorrerlo y 
             almacenarlos en una estructura de vector flotante que contendra todo 
             el contenido de audio*/
@@ -37,6 +37,8 @@ namespace prep {
                 }
             } 
         } while (count > 0);
+
+        
 
         /*EL SIGUIENTE SEGMENTO COMENTADO PERMITE VISUALIZAR 
         EL VECTOR DE MUESTRA OBTENIDO DEL ARCHIVO DE AUDIO*/

@@ -152,34 +152,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Celda.cpp" />
     <ClCompile Include="CoreFrequencyDomainFeatures.cpp" />
     <ClCompile Include="CoreTimeDomainFeatures.cpp" />
     <ClCompile Include="Digitalizacion.cpp" />
     <ClCompile Include="Entrenamiento.cpp" />
     <ClCompile Include="Gist.cpp" />
     <ClCompile Include="MFCC.cpp" />
-    <ClCompile Include="RedNeuronal.cpp" />
+    <ClCompile Include="Neurona.cpp" />
     <ClCompile Include="OnsetDetectionFunction.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Preprocesamiento.cpp" />
     <ClCompile Include="Activacion.cpp" />
-    <ClCompile Include="Neurona.cpp" />
+    <ClCompile Include="RedNeuronal.cpp" />
     <ClCompile Include="TranscriptorLib.cpp" />
     <ClCompile Include="WindowFunctions.cpp" />
     <ClCompile Include="Yin.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Activacion.h" />
-    <ClInclude Include="Celda.h" />
     <ClInclude Include="CoreFrequencyDomainFeatures.h" />
     <ClInclude Include="CoreTimeDomainFeatures.h" />
     <ClInclude Include="Digitalizacion.h" />
     <ClInclude Include="Entrenamiento.h" />
     <ClInclude Include="Gist.h" />
     <ClInclude Include="MFCC.h" />
+    <ClInclude Include="Neurona.h" />
     <ClInclude Include="OnsetDetectionFunction.h" />
     <ClInclude Include="Preprocesamiento.h" />
+    <ClInclude Include="RedNeuronal.h" />
     <ClInclude Include="TranscriptorLib.h" />
     <ClInclude Include="WindowFunctions.h" />
     <ClInclude Include="Yin.h" />

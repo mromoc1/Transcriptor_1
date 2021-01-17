@@ -33,6 +33,7 @@ namespace dig {
         recorder.stop();
         const sf::SoundBuffer& buffer = recorder.getBuffer();
         buffer.saveToFile("my_record.wav");
+        dig::InfoPista();
     }
 
     void DispositivosDisponibles()//Muestra todos los dispositivos que existen en el sistema

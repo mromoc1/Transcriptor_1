@@ -57,9 +57,9 @@ namespace entr {
 			}
 
 		}
-
-
 	archivoTSV.close();
 	}
+
+
 	
 }
