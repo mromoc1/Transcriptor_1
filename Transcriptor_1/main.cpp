@@ -11,17 +11,19 @@
 #include <vector>
 #include <string>
 #include <fstream>
+
+
 using namespace std;
 
 int main()
 {
-    //trs::Transcripcion();
+    trs::Transcripcion();
     //dig::Inic_Digitalizacion(); //Inicializa el modulo de digitalizacion 
     //dig::InfoPista(); //Entrega informacion de la pista
     //prep::setMuestreo(); // realiza el muestreo del archivo de audio y aplica las funciones de MFCC, Mel y FFT
     
 
-
+	/*
 	entr::setDireccionEntrenamiento("C:/Users/matut/OneDrive/Escritorio/es/train.tsv");
 	entr::setNombreAudio("common_voice_es_18493456.mp3");
 	entr::getArchivoTSV();
@@ -30,7 +32,7 @@ int main()
 	std::cout << entr::getDireccionEntrenamiento() << std::endl;
 	std::cout << entr::getNombreAudio() << std::endl;
 	std::cout << entr::getPalabra() << std::endl;
-
+	*/
 
 
 
