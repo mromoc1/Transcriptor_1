@@ -3,14 +3,15 @@
 #define PREPROCESAMIENTO_H
 
 #include <iostream>
+#include <vector>
 #include "Gist.h"
-#
+
 
 namespace prep {
-	void setMuestreo();
-	void Aplicar_FFT(Gist<float> gist); //Transformada
-	void Aplicar_MFCC(Gist<float> gist); //Coficientes ceptrales de mel
-	void Aplicar_MFS(Gist<float> gist);  //Mel frecuency Spectrum
+	std::vector<double> setMuestreo();
+	std::vector<double> Aplicar_FFT(Gist<float> gist); //Transformada
+	std::vector<double> Aplicar_MFCC(Gist<float> gist); //Coficientes ceptrales de mel
+	std::vector<double> Aplicar_MFS(Gist<float> gist);  //Mel frecuency Spectrum
 
 
 }

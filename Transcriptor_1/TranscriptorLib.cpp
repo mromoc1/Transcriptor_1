@@ -9,6 +9,9 @@
 
 
 
+#include <fstream>
+
+
 // TODO: Ejemplo de una función de biblioteca
 namespace trs {
     
@@ -16,9 +19,48 @@ namespace trs {
     {
        
 
-        dig::Inic_Digitalizacion();
+        //dig::Inic_Digitalizacion();
+        std::vector<double> Sample = prep::setMuestreo();
+        std::cout << Sample.size() << std::endl;
+        sf::InputSoundFile file;
+        if (!file.openFromFile("my_record.wav"))
+        {
+            std::cout << "No se encuentra el archivo dentro de la carpeta local" << std::endl;
+        }
+
+        int frameSize = Sample.size(); //Se probo con 1024
+        int sampleRate = file.getSampleRate();
+        Gist<double> gist(frameSize, sampleRate);
+        gist.processAudioFrame(Sample);
+
+        // FFT Magnitude Spectrum
+        std::cout << "Magnitud del Espectro: " << std::endl;
+        const std::vector<double>& magSpec = gist.getMagnitudeSpectrum();
+
+
+        // MFCCs
+        const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
+  
+
+        // Mel-frequency Spectrum
+        const std::vector<double>& melSpec = gist.getMelFrequencySpectrum();
+   
+
+        /*
+        std::ofstream myfile("example.txt");
+        if (myfile.is_open())
+        {
+            for (int i = 0; i < Sample.size(); i++)
+            {
+                myfile << Sample[i]<<"\n";
+            }
+            myfile.close();
+        }
+        else std::cout << "Unable to open file";
+        */
 
         /*********************************OBTENCION DE MUESTREO****************************/
+        /*
         sf::InputSoundFile file;
         if (!file.openFromFile("my_record.wav"))
         {
@@ -39,8 +81,10 @@ namespace trs {
             std::cout <<  samples[i] << std::endl;
             samples2[i] = samples[i];
         }
-
+        */
         /*********************************CREACION DE OBJETO PARA ANALISIS****************************/
+
+        /*
         int frameSize = 1024;
         int sampleRate = file.getSampleRate();
 
@@ -74,7 +118,7 @@ namespace trs {
         }
 
 
-
+        */
 
 
 
