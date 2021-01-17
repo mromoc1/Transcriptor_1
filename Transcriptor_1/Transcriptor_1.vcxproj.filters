@@ -90,6 +90,9 @@
     <ClCompile Include="RedNeuronal.cpp">
       <Filter>Archivos de origen\Redes Neuronales</Filter>
     </ClCompile>
+    <ClCompile Include="Entrenamiento1.cpp">
+      <Filter>Archivos de origen\Redes Neuronales</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Yin.h">
@@ -132,6 +135,9 @@
       <Filter>Archivos de encabezado\Redes Neuronales</Filter>
     </ClInclude>
     <ClInclude Include="RedNeuronal.h">
+      <Filter>Archivos de encabezado\Redes Neuronales</Filter>
+    </ClInclude>
+    <ClInclude Include="Entrenamiento1.h">
       <Filter>Archivos de encabezado\Redes Neuronales</Filter>
     </ClInclude>
   </ItemGroup>

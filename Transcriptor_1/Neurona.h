@@ -4,8 +4,7 @@ using namespace std;
 
 
 
-class Neurona
-{
+class Neurona{
 public:
 	vector<double> Ct; //Estado de celda (matriz o vector?)
 	vector<double> Ht; //salida anterior

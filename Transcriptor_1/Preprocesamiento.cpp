@@ -81,38 +81,51 @@ namespace prep {
         return muestreoaudio;
     }
 
-    std::vector<double> Aplicar_MFCC(Gist<double> gist) {
-        const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
-        /*
-        for (int i = 0; i < mfcc.size(); i++) {
-            std::cout << "Frecuencia de MEl con coeficientes Cepstral: " << mfcc[i] << std::endl;
+    
+    std::vector<double> Aplicar_FFT(std::vector<double> muestreo) {
+        sf::InputSoundFile file;
+        if (!file.openFromFile("my_record.wav"))
+        {
+            std::cout << "No se encuentra el archivo dentro de la carpeta local" << std::endl;
         }
-        */
-        return mfcc;
-    }
 
-    std::vector<double> Aplicar_MFS(Gist<double> gist) {
-        const std::vector<double>& melSpec = gist.getMelFrequencySpectrum();
-        /*
-        for (int i = 0; i < melSpec.size(); i++) {
-            std::cout << "Espectro de Frecuencia de MEL: " << melSpec[i] << std::endl;
-        }
-        */
-        return melSpec;
-    }
-
-    std::vector<double> Aplicar_FFT(Gist<double> gist) {
+        int frameSize = muestreo.size(); //Se probo con 1024
+        int sampleRate = file.getSampleRate();
+        Gist<double> gist(frameSize, sampleRate);
+        gist.processAudioFrame(muestreo);
         const std::vector<double>& magSpec = gist.getMagnitudeSpectrum();
-        /*
-        for (int i = 0; i < magSpec.size(); i++) {
-            std::cout << "Magnitud del Espectro: " << magSpec[i] << std::endl;
-        }
-        */
         return magSpec;
     }
 
 
 }
+
+
+
+
+/*
+    std::vector<double> Aplicar_MFCC(std::vector<double> muestreo) {
+
+
+        const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
+
+        for (int i = 0; i < mfcc.size(); i++) {
+            std::cout << "Frecuencia de MEl con coeficientes Cepstral: " << mfcc[i] << std::endl;
+        }
+
+        return mfcc;
+    }*/
+    /*
+    std::vector<double> Aplicar_MFS(Gist<double> gist) {
+        const std::vector<double>& melSpec = gist.getMelFrequencySpectrum();
+
+        for (int i = 0; i < melSpec.size(); i++) {
+            std::cout << "Espectro de Frecuencia de MEL: " << melSpec[i] << std::endl;
+        }
+
+        return melSpec;
+    }*/
+
 
 
 

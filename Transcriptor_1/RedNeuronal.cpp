@@ -5,6 +5,8 @@
 using namespace std;
 
 vector<double> muestra;
+
+/*
 RedNeuronal::RedNeuronal(vector<double> _Xt) {
 
 	muestra = _Xt;
@@ -14,7 +16,7 @@ RedNeuronal::RedNeuronal(vector<double> _Xt) {
 	std::cout << actual.Ct.size() << std::endl;
 
 
-	
 
 
-}
+
+}*/

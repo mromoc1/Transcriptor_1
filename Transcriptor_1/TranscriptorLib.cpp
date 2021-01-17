@@ -6,10 +6,12 @@
 #include "Gist.h"
 #include "Digitalizacion.h"
 #include "Preprocesamiento.h"
-
-
-
+#include "RedNeuronal.h"
+#include "Entrenamiento.h"
 #include <fstream>
+#include "Entrenamiento1.h"
+
+using namespace std;
 
 
 // TODO: Ejemplo de una función de biblioteca
@@ -17,37 +19,50 @@ namespace trs {
     
     void Transcripcion()
     {
-       
-
         //dig::Inic_Digitalizacion();
-        std::vector<double> Sample = prep::setMuestreo();
-        std::cout << Sample.size() << std::endl;
-        sf::InputSoundFile file;
-        if (!file.openFromFile("my_record.wav"))
-        {
-            std::cout << "No se encuentra el archivo dentro de la carpeta local" << std::endl;
-        }
+        vector<double> Sample = prep::setMuestreo();
+        cout << Sample.size() << endl;
+        vector<double> preSample = prep::Aplicar_FFT(Sample);
 
-        int frameSize = Sample.size(); //Se probo con 1024
-        int sampleRate = file.getSampleRate();
-        Gist<double> gist(frameSize, sampleRate);
-        gist.processAudioFrame(Sample);
-
-        // FFT Magnitude Spectrum
-        std::cout << "Magnitud del Espectro: " << std::endl;
-        const std::vector<double>& magSpec = gist.getMagnitudeSpectrum();
+        //RedNeuronal red = RedNeuronal(preSample);
+        /*
+        for (int i = 0; i < preSample.size()  ;i++) {
+            cout << preSample[i] << endl;
+        }*/
 
 
+        //Caso entrenamiento
+
+
+        Entrenamiento1 ent = Entrenamiento1();
+        ent.setDireccionEntrenamiento("C:/Users/mromo/Desktop/dataset");
+        ent.getArchivoTSV();
+
+        
+   
+
+
+
+        
+
+
+    }
+
+
+
+}
+
+
+/*
+       
         // MFCCs
         const std::vector<double>& mfcc = gist.getMelFrequencyCepstralCoefficients();
   
 
         // Mel-frequency Spectrum
         const std::vector<double>& melSpec = gist.getMelFrequencySpectrum();
-   
-
-        /*
-        std::ofstream myfile("example.txt");
+       
+       std::ofstream myfile("example.txt");
         if (myfile.is_open())
         {
             for (int i = 0; i < Sample.size(); i++)
@@ -131,7 +146,7 @@ namespace trs {
         do
         {
             count = file.read(samples, 1024);
-         
+
             // process, analyze, play, convert, or whatever
             // you want to do with the samples...
         } while (count > 0);
@@ -179,10 +194,3 @@ namespace trs {
         }
 
         */
-
-
-    }
-
-
-
-}
