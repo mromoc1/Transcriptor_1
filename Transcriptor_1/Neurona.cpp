@@ -1,7 +1,7 @@
 #include "Neurona.h"
 
 
-Neurona::Neurona(vector<double> _Xt) {
+Neurona::Neurona(int vectam) {
 	this->Whf = 0;
 	this->Bhf = 0;
 	this->Wxf = 0;
@@ -19,9 +19,9 @@ Neurona::Neurona(vector<double> _Xt) {
 	this->Wxo = 0;
 	this->Bxo = 0;
 
-	for (int i = 0; i< _Xt.size() ;i++) {
-		this->Ht[i] = 0;
-		this->Ct[i] = 0;
+	for (int i = 0; i< vectam;i++) {
+		this->Ht.push_back(0);
+		this->Ct.push_back(0);
 	}
 
 }

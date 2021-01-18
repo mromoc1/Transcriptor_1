@@ -1,8 +1,9 @@
 #pragma once
+#ifndef NEURONA_H
+#define NEURONA_H
 #include <vector>
+
 using namespace std;
-
-
 
 class Neurona{
 public:
@@ -29,6 +30,9 @@ public:
 	double Bho; //sesgo
 	double Wxo; //peso
 	double Bxo; //sesgo
-	Neurona(vector<double> _Xt);
+
+
+	Neurona(int vectam);
 };
+#endif
 

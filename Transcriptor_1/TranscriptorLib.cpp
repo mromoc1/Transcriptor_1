@@ -9,7 +9,6 @@
 #include "RedNeuronal.h"
 #include "Entrenamiento.h"
 #include <fstream>
-#include "Entrenamiento1.h"
 
 using namespace std;
 
@@ -23,32 +22,14 @@ namespace trs {
         vector<double> Sample = prep::setMuestreo();
         cout << Sample.size() << endl;
         vector<double> preSample = prep::Aplicar_FFT(Sample);
-
-        //RedNeuronal red = RedNeuronal(preSample);
-        /*
-        for (int i = 0; i < preSample.size()  ;i++) {
-            cout << preSample[i] << endl;
-        }*/
-
-
-        //Caso entrenamiento
-
-
-        Entrenamiento1 ent = Entrenamiento1();
-        ent.setDireccionEntrenamiento("C:/Users/mromo/Desktop/dataset");
-        ent.getArchivoTSV();
-
-        
-   
-
-
-
-        
-
-
     }
 
-
+    void Entrenar() {
+        Entrenamiento ent = Entrenamiento();
+        ent.setDireccionEntrenamiento("C:/Users/mromo/Desktop/dataset");
+        ent.setNombreAudio("common_voice_es_18493466.mp3");
+        ent.getArchivoTSV();
+    }
 
 }
 
