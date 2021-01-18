@@ -30,10 +30,11 @@ void Entrenamiento::getArchivoTSV()
         {
             std::getline(archivoTSV, str, '\t');
             this->setPalabra(str);
-            cout << this->palabra << endl;
         }
     }
     archivoTSV.close();
 }
+
+
 
 
