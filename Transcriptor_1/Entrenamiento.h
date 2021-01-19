@@ -7,17 +7,19 @@ using namespace std;
 
 
 class Entrenamiento{
-public:
-
-	string direccionDataset;
+private:
 	string palabra;
+	string direccionDataset;
 	string nombreaudio;
-
-	void setPalabra(string _palabra); //para guardar la palabra que la red deberia transcribir
+	void setPalabra(string _palabra);
+public:
+	 //para guardar la palabra que la red deberia transcribir
 	void setNombreAudio(string audio); //guarda el nombre del audio
 	void setDireccionEntrenamiento(string dir); //guarda la direccion de la carpeta de entrenamiento
 	void getArchivoTSV();
-
+	string  getPalabra();
+	string getNombreAudio();
+	string getDireecionDataset();
 
 };
 

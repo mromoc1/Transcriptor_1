@@ -15,10 +15,9 @@ void RedNeuronal::setSample(vector<double> _sample) {
 	this->sample = _sample;
 }
 
-void RedNeuronal::predecir() {
+void RedNeuronal::predecirFonema() {
 
 	//entra un segmento de x muestras que corresponde a Xt
-
 
 }
 

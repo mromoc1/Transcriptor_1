@@ -10,6 +10,7 @@
 #include "Entrenamiento.h"
 #include <fstream>
 
+
 using namespace std;
 
 
@@ -22,14 +23,57 @@ namespace trs {
         vector<double> Sample = prep::setMuestreo();
         cout << Sample.size() << endl;
         vector<double> preSample = prep::Aplicar_FFT(Sample);
+        
+
     }
 
-    void Entrenar() {
+    void Entrenar(string direccion) {
         Entrenamiento ent = Entrenamiento();
-        ent.setDireccionEntrenamiento("C:/Users/mromo/Desktop/dataset");
-        ent.setNombreAudio("common_voice_es_18493466.mp3");
-        ent.getArchivoTSV();
+        //ent.setDireccionEntrenamiento("C:/Users/mromo/Desktop/dataset");
+        //ent.setNombreAudio("common_voice_es_18493466.mp3");
+        //ent.getArchivoTSV(); //obtiene la palabra asociada al audio seteado
+
+        /*
+        DIR* directorio;
+        struct dirent* elemento;
+        string elem;
+        vector<string> elementos;
+        if (directorio=opendir(direccion.c_str())) {
+            while (elemento=readdir(directorio)) {
+                elem = elemento->d_name;
+                elementos.push_back(elem);
+            }
+        }
+        for (int i = 0;i < elementos.size();i++) {
+            cout << elementos[i] << endl;
+        }*/
+        
+
+
+
+
+       //samplea
+       //predecir
+
+        //op1 entra dir usuario hace el while
+
+        //op2 el usuario hace while y entra el nombre del audio, 
+        //lo samplea y entra a la red (nombre)
+
+        //op3 entra dir, nombreaudio.
+
+        //vec[dio1au.mp3, audio2.mp3]
+        //while vec 
+         //samplear el archivo
+
+ 
+
     }
+
+    //trs::Entrenar (nombreaudio)
+
+
+    //
 
 }
 

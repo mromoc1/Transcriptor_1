@@ -134,5 +134,8 @@
     <ClInclude Include="Entrenamiento.h">
       <Filter>Archivos de encabezado\Redes Neuronales</Filter>
     </ClInclude>
+    <ClInclude Include="dirent.h">
+      <Filter>Archivos de encabezado\Librerias</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

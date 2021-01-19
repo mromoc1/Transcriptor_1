@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -20,10 +21,11 @@ void Entrenamiento::setNombreAudio(string _audio) {
 
 void Entrenamiento::getArchivoTSV()
 {
-    cout << this->direccionDataset << endl;
+
     std::ifstream archivoTSV;
     archivoTSV.open(this->direccionDataset + "/train.tsv");
     std::string str;
+    
     while (std::getline(archivoTSV, str, '\t'))
     {
         if (str.find(this->nombreaudio, 0) != string::npos)
@@ -33,6 +35,21 @@ void Entrenamiento::getArchivoTSV()
         }
     }
     archivoTSV.close();
+}
+
+string Entrenamiento::getPalabra() {
+    return this->palabra;
+    
+}
+
+string Entrenamiento::getNombreAudio() {
+    return this->nombreaudio;
+
+}
+
+string Entrenamiento::getDireecionDataset() {
+    return this->direccionDataset;
+
 }
 
 

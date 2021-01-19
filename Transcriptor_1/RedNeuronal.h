@@ -19,6 +19,6 @@ public:
 	void setSample(vector<double> _Xt);
 	void inicializarRed();
 	RedNeuronal(vector<double> sample);
-	void predecir();
+	void predecirFonema();
 };
 #endif
